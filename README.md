@@ -1,6 +1,8 @@
-# Project Name Generator
+# Chasperli-box
 
-Generate quirky names like *spiffy-waterfall*, *sassy-bread*, *mature-dew-8239* to use wherever you need a random but memorable name.
+Forked from [https://github.com/aceakash/project-name-generator](https://github.com/aceakash/project-name-generator).
+
+Generate quirky swiss german expressions like *verrockts-Rüebli*, *sauglatts-Büsi*, *gäbigs-Gigampfi-2921* to use wherever you need a random but memorable name.
 
 Useful for object names, temp folders, passwords, project names, unique ids etc
 
@@ -11,19 +13,19 @@ Useful for object names, temp folders, passwords, project names, unique ids etc
 ```javascript
 var generate = require('project-name-generator');
 
-generate().dashed; // 'uptight-guitar'
+generate().dashed; // 'verrockts-Rüebli'
 
-generate().spaced; // 'grandiose clam'
+generate().spaced; // 'verrockts Rüebli'
 
-generate().raw; // ['deluxe', 'grandmother']
+generate().raw; // ['verrockts', 'Rüebli']
 
-generate({ number: true }).dashed; // 'disgraceful-temper-7794'
+generate({ number: true }).dashed; // 'verrockts-Rüebli-7794'
 
-generate({ words: 4 }).raw; // ['tiny', 'crabby', 'wired', 'quicksand']
+generate({ words: 4 }).raw; // ['verrockts', 'abgspaceds', 'wüeschts', 'Rüebli']
 
-generate({ words: 4, number: true }).dashed; // 'breakable-judicious-luxuriant-tax-3931'
+generate({ words: 4, number: true }).dashed; // 'verrockts-abgspaceds-wüeschts-Rüebli-4298'
 
-generate({ words: 2, alliterative: true }).spaced; // 'elegant experience'
+generate({ words: 2, alliterative: true }).spaced; // 'gäbigs Gigampfi'
 
 ```
 
@@ -34,9 +36,9 @@ This package contains a cli script.  You can pull in the package globally using 
 Call from your command line
 ```
 $ project-name-generator
-{ raw: [ 'spry', 'bath' ],
-  dashed: 'spry-bath',
-  spaced: 'spry bath' }
+{ raw: [ 'verrockts', 'Rüebli' ],
+  dashed: 'verrockts-Rüebli',
+  spaced: 'verrockts Rüebli' }
 ```
 
 For CLI options 
@@ -111,5 +113,6 @@ npm test
 
 The library has been tested with Node.js 12.18.4
 
-## Status
-![How up-to-date are dependencies?](https://david-dm.org/aceakash/project-name-generator.svg)
+## Todo
+
+- Adjust form of adjective to the noun

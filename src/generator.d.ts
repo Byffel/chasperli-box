@@ -1,4 +1,4 @@
-declare module 'project-name-generator' {
+declare module 'chasperli-box' {
   interface Options {
     alliterative?: boolean;
     number?: boolean;

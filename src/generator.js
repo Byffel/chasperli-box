@@ -35,7 +35,7 @@ function getRawProjName(options) {
   if (options.alliterative)
     raw.push(_.sample(getAlliterativeMatches(nouns, raw[0].substring(0, 1))));
   else
-    raw.push(_.sample(nouns).toLowerCase());
+    raw.push(_.sample(nouns));
 
   if (options.number) {
     raw.push(_.random(1, 9999));
